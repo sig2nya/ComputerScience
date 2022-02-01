@@ -4,4 +4,8 @@ HTTP Spec</br>
 
 [HTTP Request]
 GET /hello?username = world HTTP/1.1
-HOST: localhost:8080
+HOST: localhost:8080</br>
+[HTTP Response]
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset = UTF-8 Content-Length: 11</br>
+Hello, World!
