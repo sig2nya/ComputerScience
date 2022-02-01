@@ -80,6 +80,7 @@ cookie : cookie
 --- Headers - end ---
 ```
 Spring에서 확인하기
+----------------
 ```
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 start ---");
