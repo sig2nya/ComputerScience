@@ -50,6 +50,7 @@ public class RequestHeaderServlet extends HttpServlet {
 Console Result
 --------------
 ```
+Received [GET /request-header?username=hello HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
 sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"
@@ -65,7 +66,6 @@ Sec-Fetch-Dest: document
 Accept-Encoding: gzip, deflate, br
 Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
 Cookie: JSESSIONID=27280C9D2C968F28C4A4A58EBA56CD56
-
 ]
 --- REQUEST-LINE - start ---
 request.getMethod() = GET
