@@ -11,7 +11,7 @@ HTTP/1.1 200 OK</br>
 Content-Type: text/plain; charset = UTF-8 Content-Length: 11</br>
 Hello, World!</br>
 
-Spring에서 확인하기
+start-line 정보 Spring에서 확인하기
 -------------
 ```java
     private void printStartLine(HttpServletRequest request) {
@@ -43,7 +43,7 @@ request.getQueryString() = username=hello
 request.isSecure() = false
 --- REQUEST-LINE - end ---
 ```
-Spring에서 확인하기
+헤더 정보 Spring에서 확인하기
 ----------------
 ```
     private void printHeader(HttpServletRequest request){
@@ -79,7 +79,7 @@ accept-language : accept-language
 cookie : cookie
 --- Headers - end ---
 ```
-Spring에서 확인하기
+Header 편리한 조회 Spring에서 확인하기
 ----------------
 ```
     private void printHeaderUtils(HttpServletRequest request) {
