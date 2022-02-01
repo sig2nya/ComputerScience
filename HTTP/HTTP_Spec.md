@@ -11,7 +11,7 @@ HTTP/1.1 200 OK</br>
 Content-Type: text/plain; charset = UTF-8 Content-Length: 11</br>
 Hello, World!</br>
 
-JSP에서 확인하기
+Spring에서 확인하기
 -------------
 ```java
 package hello.servlet.basic.request;
@@ -47,3 +47,31 @@ public class RequestHeaderServlet extends HttpServlet {
     }
 }
 ```
+Console Result
+--------------
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: JSESSIONID=27280C9D2C968F28C4A4A58EBA56CD56
+
+]
+--- REQUEST-LINE - start ---
+request.getMethod() = GET
+request.getProtocal() = HTTP/1.1
+request.getScheme() = http
+request.getRequestURL() = http://localhost:8080/request-header
+request.getRequestURI() = /request-header
+request.getQueryString() = username=hello
+request.isSecure() = false
+--- REQUEST-LINE - end ---
