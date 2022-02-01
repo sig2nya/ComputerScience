@@ -45,7 +45,7 @@ request.isSecure() = false
 ```
 헤더 정보 Spring에서 확인하기
 ----------------
-```
+```java
     private void printHeader(HttpServletRequest request){
         System.out.println("--- Headers - start ---");
         Enumeration<String> headerNames = request.getHeaderNames();
@@ -81,7 +81,7 @@ cookie : cookie
 ```
 Header 편리한 조회 Spring에서 확인하기
 ----------------
-```
+```java
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 start ---");
         System.out.println("[Host 편의 조회]");
