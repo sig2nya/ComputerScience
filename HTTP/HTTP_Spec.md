@@ -5,6 +5,7 @@ HTTP Spec</br>
 [HTTP Request]</br>
 GET /hello?username = world HTTP/1.1</br>
 HOST: localhost:8080</br>
+</br>
 [HTTP Response]</br>
 HTTP/1.1 200 OK</br>
 Content-Type: text/plain; charset = UTF-8 Content-Length: 11</br>
