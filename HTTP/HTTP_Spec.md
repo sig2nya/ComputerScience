@@ -49,6 +49,7 @@ public class RequestHeaderServlet extends HttpServlet {
 ```
 Console Result
 --------------
+```
 Host: localhost:8080
 Connection: keep-alive
 sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"
@@ -75,3 +76,4 @@ request.getRequestURI() = /request-header
 request.getQueryString() = username=hello
 request.isSecure() = false
 --- REQUEST-LINE - end ---
+```
