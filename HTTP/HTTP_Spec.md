@@ -13,7 +13,7 @@ Hello, World!</br>
 
 JSP에서 확인하기
 -------------
-
+```java
 package hello.servlet.basic.request;
 
 import javax.servlet.ServletException;
@@ -46,3 +46,4 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 }
+```
