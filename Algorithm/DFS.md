@@ -9,16 +9,16 @@ class DFS{
   
     public DFS(int V){
       this.V = V;
-      this.dfsGraph = new int[this.nV+1][this.nV+1];
-      this.visitArr = new boolean[this.nV+1];
+      this.dfsGraph = new int[this.V+1][this.V+1];
+      this.visitArr = new boolean[this.V+1];
     }
     
-    public void dfs(int vIdx) {
-        this.visitArr[vIdx] = true;
-        System.out.print(vIdx + " "); 
+    public void dfs(int idx) {
+        this.visitArr[idx] = true;
+        System.out.print(idx + " "); 
         
-        for(int i=1; i<=this.nV; i++) {
-            if(dfsGraph[vIdx][i] == 1 && visitArr[i] == false) { // 방문하지 않았으며, 정점이 연결되어 있는 경우.
+        for(int i=1; i <= this.V; i++) {
+            if(dfsGraph[idx][i] == 1 && visitArr[i] == false) { // 방문하지 않았으며, 정점이 연결되어 있는 경우.
                 dfs(i);
             }
         }
