@@ -18,7 +18,7 @@ class DFS{
         System.out.print(vIdx + " "); 
         
         for(int i=1; i<=this.nV; i++) {
-            if(dfsGraph[vIdx][i] == 1 && visitArr[i] == false) {
+            if(dfsGraph[vIdx][i] == 1 && visitArr[i] == false) { // 방문하지 않았으며, 정점이 연결되어 있는 경우.
                 dfs(i);
             }
         }
