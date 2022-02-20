@@ -6,12 +6,6 @@ class DFS{
     private int V;
     private int[][] dfsGraph;
     private boolean[] visitArr;
-  
-    public DFS(int V){
-      this.V = V;
-      this.dfsGraph = new int[this.V+1][this.V+1];
-      this.visitArr = new boolean[this.V+1];
-    }
     
     public void dfs(int idx) {
         this.visitArr[idx] = true;
@@ -29,19 +23,23 @@ class DFS{
 ======================================
 * 큐로 구현합니다. 재귀로 구현하지 않습니다.
 ```java
-public static void BFS(int V){ // 재귀로 구현하지 않는다.
-		Queue<Integer> queue = new LinkedList<Integer>();
-		queue.offer(V); // 큐에 값 넣기.
-		check[V] = true;
-		while(!queue.isEmpty()){
-			int tmp = queue.poll(); // 큐에 담긴 값 꺼내기.
-			System.out.print(tmp + " ");
-			for(int i = 1; i < arr[V].length; i++){
-				if(arr[tmp][i] == 1 && !check[i]){
-					queue.offer(i);
-					check[i] = true;
-				}
+class BFS(int V){ // 재귀로 구현하지 않는다.
+	private int V;
+    	private int[][] dfsGraph;
+    	private boolean[] visitArr;
+	
+	Queue<Integer> queue = new LinkedList<Integer>();
+	queue.offer(V); // 큐에 값 넣기.
+	check[V] = true;
+	while(!queue.isEmpty()){
+		int tmp = queue.poll(); // 큐에 담긴 값 꺼내기.
+		System.out.print(tmp + " ");
+		for(int i = 1; i < arr[V].length; i++){
+			if(arr[tmp][i] == 1 && !check[i]){
+				queue.offer(i);
+				check[i] = true;
 			}
 		}
 	}
+}
 ```
