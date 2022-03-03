@@ -18,13 +18,13 @@ public String hello(){
 () -> 1
 () -> { return 1; }
  
-(int x) -> x + 1
-(x) -> x + 1
-x -> x + 1
+(int x) -> x + 1;
+(x) -> x + 1;
+x -> x + 1;
 (int x) -> { return x + 1; }
 x -> { return x + 1; }
 
-(int x, int y) -> x + y
-(x, y) -> x + y
+(int x, int y) -> x + y;
+(x, y) -> x + y;
 (x, y) -> { return x + y; }
 ```
