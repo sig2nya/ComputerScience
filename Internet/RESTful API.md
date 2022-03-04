@@ -22,3 +22,20 @@ REST API 디자인 가이드
 |GET|GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다.|
 |PUT|PUT를 통해 해당 리소스를 수정합니다.|
 |DELETE|DELETE를 통해 리소스를 삭제합니다.|
+
+```java
+@RestController
+public class ApiController {
+    @RequestMapping(value = "/api/test", method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public String getApiTest(){
+        return "{\"result\":\" ok\"}"; // Json 형태로 반환
+    }
+
+    @RequestMapping(value = "/api/test2", method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    public String getApiTest2(){
+        return "{\"result\":\" hi\"}";
+    }
+}
+```
