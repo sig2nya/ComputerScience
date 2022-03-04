@@ -23,6 +23,8 @@ REST API 디자인 가이드
 |PUT|PUT를 통해 해당 리소스를 수정합니다.|
 |DELETE|DELETE를 통해 리소스를 삭제합니다.|
 
+RESTful API Exam
+================
 ```java
 @RestController
 public class ApiController {
