@@ -1,6 +1,11 @@
-HTTP Spec</br>
----------
+HTTP Spec
+=========
 ![image](https://user-images.githubusercontent.com/70207093/151931506-ff2b0644-db1e-4a41-90ce-7de37773ea02.png)
+
+HTTP Structure
+==============
+<img width="556" alt="스크린샷 2022-03-05 14 41 01" src="https://user-images.githubusercontent.com/70207093/156869944-8dfbe4a3-3403-4f87-8503-d239af94063b.png">
+
 
 [HTTP Request]</br>
 GET /hello?username = world HTTP/1.1</br>
