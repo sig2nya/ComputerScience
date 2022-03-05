@@ -28,3 +28,7 @@ WEB Application Server(WAS)
 WAS가 Dynamic Resource 요청을 처리하는 과정
 =====================================
 * Client Request -> (WEB Server) -> WAS가 요청 확인 -> 해당 요청에 맞는 Servlet(Service) 호출(GET / POST) -> 동적 페이지 생성 및 WAS에 전달 -> WAS가 Client에 페이지를 반환
+
+Apache Tomcat 동작 원리
+=====================
+* Client Request -> Servlet Container가 Request / Response 객체 생성 -> WAS가 요청 URL 분석 -> URL에 맞는 Servlet / Service 호출 -> HTTP Method에 따라, doGet / doPost 메서드 호출 -> 요청이 완료되면 Response에 응답 -> 응답 후, Request / Response 객체 소멸 -> Shutdown(Socket을 닫음)
