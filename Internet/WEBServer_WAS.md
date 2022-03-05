@@ -19,7 +19,12 @@ WEB Application Server(WAS)
 * 종류 : Apache Tomcat, JBoss, Jeus 등</br>
 ![image](https://user-images.githubusercontent.com/70207093/156868629-82c3bd28-6fa1-428f-b2c7-69c9b6733ecc.png)
 </br>
+
 * WEB Service Architecture는 다양한 구조를 가질 수 있다.
 * * Client -> WEB Server -> DB
 * * Client -> WEB Application Server -> DB
 * * Client -> WEB Server -> WEB Application Server -> DB
+
+WAS가 Dynamic Resource 요청을 처리하는 과정
+=====================================
+* Client Request -> (WEB Server) -> WAS가 요청 확인 -> 해당 요청에 맞는 Servlet(Service) 호출(GET / POST) -> 동적 페이지 생성 및 WAS에 전달 -> WAS가 Client에 페이지를 반환
