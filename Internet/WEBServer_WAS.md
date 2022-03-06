@@ -32,3 +32,17 @@ WAS가 Dynamic Resource 요청을 처리하는 과정
 Apache Tomcat 동작 원리
 =====================
 * Client Request -> Servlet Container가 Request / Response 객체 생성 -> WAS가 요청 URL 분석 -> URL에 맞는 Servlet / Service 호출 -> HTTP Method에 따라, doGet / doPost 메서드 호출 -> 요청이 완료되면 Response에 응답 -> 응답 후, Request / Response 객체 소멸 -> Shutdown(Socket을 닫음)
+
+Apache Tomcat Directory Structure
+=================================
+![image](https://user-images.githubusercontent.com/70207093/156909353-d60f7559-5233-40ea-b63e-f3c4f65eca34.png)
+
+|Name   |Discription|
+|-------|-----------|
+|bin    |톰캣 구동을 위한 Script file(.sh, .bat)|
+|conf   |Configuration 설정 파일              |
+|lib    |톰캣 구동을 위한 lib(jar) 파일          |
+|logs   |예외 발생 사항 등에 대한 로그             |
+|temp   |임시 저장용 폴더                       |
+|webapps|웹 애플리케이션 파일                    |
+|work   |Servlet으로 변환된 java / class 파일   |
