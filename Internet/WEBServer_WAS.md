@@ -29,6 +29,15 @@ WAS가 Dynamic Resource 요청을 처리하는 과정
 =====================================
 * Client Request -> (WEB Server) -> WAS가 요청 확인 -> 해당 요청에 맞는 Servlet(Service) 호출(GET / POST) -> 동적 페이지 생성 및 WAS에 전달 -> WAS가 Client에 페이지를 반환
 
+Apache Tomcat
+=============
+* JAVA로 작성된 WAS. Tomcat 또한 JVM 위에서 동작한다.
+* 하나의 Server에는 여러 개의 Service가 존재 가능하다.
+* * 각 Service는 1개의 Engine과 여러 개의 Connector로 구성된다.
+* * Engine은 Catalina Servlet Engine이며 정의된 Connector로 요청이 올 때, 해당 Host에 전달해준다.
+* * 하나의 Engine에는 여러 개의 Host가 존재 가능하다. 하나의 Host에는 여러 개의 Context 가 존재할 수 있습 니다. Context는 하나의 Web Application을 나타내며 주로 *.war 파일의 형태로 배포가 된다.
+* 요청 처리 과정 : Client Request -> Catalina does find 'Context' -> Context does find thier 'deployment descriptor files(web.xml)' -> Deliver to Servlet 
+
 Apache Tomcat 동작 원리
 =====================
 * Client Request -> Servlet Container가 Request / Response 객체 생성 -> WAS가 요청 URL 분석 -> URL에 맞는 Servlet / Service 호출 -> HTTP Method에 따라, doGet / doPost 메서드 호출 -> 요청이 완료되면 Response에 응답 -> 응답 후, Request / Response 객체 소멸 -> Shutdown(Socket을 닫음)
