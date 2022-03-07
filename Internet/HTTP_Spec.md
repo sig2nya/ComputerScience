@@ -1,6 +1,31 @@
-HTTP Spec
-=========
-![image](https://user-images.githubusercontent.com/70207093/151931506-ff2b0644-db1e-4a41-90ce-7de37773ea02.png)
+HTTP
+====
+* 정의 : HyperText Transfer Protocol. HTML문서를 교환하기 위한 통신 상호 규약.
+* HTTP 메시지 기본 구조</br>
+![image](https://user-images.githubusercontent.com/70207093/156974092-f69a075d-9bdc-40f3-9d31-c5838f532021.png)
+* * Start Line : Request / Response에 따라 다르다. 
+* * Header : 'Key:Value'로 구성되어 있다. HTTP 전송에 필요한 모든 부가 정보를 갖고 있다.
+* * Body : 메시지의 본문을 담는다.
+
+HTTP 특징
+========
+* Stateless : 이전 요청과 다음 요청이 관계가 없다. 서버는 클라이언트를 식별할 수 없다. 이를 통하여, 서버의 부하를 줄여준다.
+* Conectionless : 요청/응답이 완료되면, 연결을 끊는다. 이를 통한 단점이 생기는데, 서버는 클라이언트를 기억하지 않으니 매번 연결/해제 과정이 일어난다.
+
+Cookie
+======
+* HTTP의 Stateless 문제 해결을 위하여 Cookie를 이용할 수 있다.
+* Cookie는 Server측에서 Response Header에 포함하여 Web Browser에 심는다.
+* Cookie는 보안에 취약하다.(위/변조가 쉽다)
+* * 쿠키의 구성 요소 : 이름, 값, 유효시간, 도메인, 경로
+
+Session
+=======
+* Cookie와 다르게, Session은 사용자에 대한 정보를 Server측에서 사용자 정보를 저장한다.
+* 일반적으로, 쿠키보다 보안에 뛰어나다.
+* Server측에서 정보를 갖고 있으니, Server 성능 저하의 원인이 된다.
+* * Session 생성 과정 : Client는 Server에 접속 -> Server는 Session ID 발급 -> Client는 Session ID에 대한 Cookie 생성 -> Client가 Server에 재요청시, Cookie를 이용하여 Session 발급
+* * 특징 : 각 Client에 고유 ID, Cookie보다 높은 보안성, 사용자 증가시 Server측 메모리 증가.
 
 HTTP Structure
 ==============
