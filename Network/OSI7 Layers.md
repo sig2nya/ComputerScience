@@ -49,5 +49,5 @@ OSI 7 Layers
 * * ICMP(Internet Control Message Protocol) : IP Packet을 처리할 때, 발생되는 문제를 알리기 위한 프로토콜이다. Ping 명령어 같은 경우에도 ICMP를 이용한 기능이라고 볼 수 있다. ICMP를 통해 DDoS 공격이 이루어질 수도 있다.
 * * IGMP(Internet Group Management Protocol) : Subnet간의 멀티캐스트를 위한 프로토콜로 사용된다. 주로 IPTV 외에서는 잘 사용되지 않는다.
 * 데이터 단위는 Packet
-* 
+
 *JAVA Socket 통신 기회가 있으면 해보자.(https://mainpower4309.tistory.com/25)
