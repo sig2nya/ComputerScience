@@ -37,4 +37,5 @@ OSI 7 Layers
 * * 회선 제어 : ENQ/ACK 기법, Polling 기법
 * * ENQ/ACK : Enquery / Acknowledge, 송신측이 Enquery 수신측이 Acknowledge, 1:1 전송 기법
 * * Polling : Select모드를 통하여 송신측이 전송할 수신측을 선택한다. 1:多 전송 기법
-* 데이터 단위는 Frame
+* 데이터 단위는 Frame, 대표 프로토콜은 Ethernet 사용</br>
+![image](https://user-images.githubusercontent.com/70207093/157163951-5ba1ea68-b512-465e-9541-cddd46f9f09c.png)
