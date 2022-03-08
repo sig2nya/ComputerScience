@@ -124,5 +124,4 @@ public class Client {
 
 ```
 * 결과물</br>
-<img width="1045" alt="스크린샷 2022-03-08 14 09 00" src="https://user-images.githubusercontent.com/70207093/157170358-3d148a9e-f649-459a-a78a-5c4f9fed7a25.png">
-
+<img width="1138" alt="스크린샷 2022-03-08 15 05 33" src="https://user-images.githubusercontent.com/70207093/157176832-0fc61b5e-f906-4925-9315-b4af311b81f4.png">
