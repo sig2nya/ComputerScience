@@ -51,3 +51,40 @@ OSI 7 Layers
 * 데이터 단위는 Packet
 
 *JAVA Socket 통신 기회가 있으면 해보자.(https://mainpower4309.tistory.com/25)
+```java
+// Server측 
+package network;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class DemoServer {
+    public static void main(String[] args) throws IOException {
+        int port = 5050;
+        ServerSocket ssk = new ServerSocket(port); // ServerSocket 설정
+
+        System.out.println("접속 대기중...");
+
+        while(true){
+            Socket socket = ssk.accept();
+            System.out.println("사용자 접속 완료.");
+            System.out.println("Client IP : " + socket.getInetAddress());
+        }
+    }
+}
+```
+```java
+// Client 측
+package network;
+
+import java.io.IOException;
+import java.net.Socket;
+
+public class Client {
+    public static void main(String[] args) throws IOException {
+        Socket socket = new Socket("127.0.0.1", 5050);
+        System.out.println("서버와 접속이 되었습니다.");
+    }
+}
+```
