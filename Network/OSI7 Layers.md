@@ -136,4 +136,5 @@ public class Client {
 > * 실시간 전송에 불리하다.(ex. Streaming Service)
 > > 3-Way-HandShaking(통신 시작) : Client가 SYN 패킷 전송 / 응답 대기 -> Server는 SYN+ACK 패킷을 Client로 응답 -> Client는 ACK패킷을 다시 보내 통신 시작.
 > > 4-Way-HandShaking(통신 종료) : Client가 FIN 패킷 전송 / 응답 대기 -> Server는 Time-Wait상태로 통신이 끝날 때까지 대기 -> 통신이 종료되면 Server가 Client에게 FIN 패킷 전송 -> Client는 확인 응답 전송
+
 > UDT(User Datagram Protocol) : 비연결 지향형 프로토콜. 신뢰성있는 데이터 전송에 부적합하다. 서로 다른 경로로 패킷을 전송한다(순서 보장 안됌).
