@@ -79,14 +79,20 @@ public class DemoServer {
 package network;
 
 import java.io.IOException;
+import java.net.ConnectException;
 import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("127.0.0.1", 5050);
-        System.out.println("서버와 접속이 되었습니다.");
+        try{
+            Socket socket = new Socket("127.0.0.1", 5050);
+            System.out.println("서버와 접속이 되었습니다.");
+        } catch(ConnectException e){
+            System.out.println("연걸이 거절되었습니다.");
+        }
     }
 }
+
 ```
 * 결과물</br>
 <img width="1045" alt="스크린샷 2022-03-08 14 09 00" src="https://user-images.githubusercontent.com/70207093/157170358-3d148a9e-f649-459a-a78a-5c4f9fed7a25.png">
