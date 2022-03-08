@@ -35,5 +35,5 @@ OSI 7 Layers
 * 프레임을 생성하고, 흐름 / 오류 제어 수행, 회선 제어도 수행한다.
 * * 회선 제어 : ENQ/ACK 기법, Polling 기법
 * * ENQ/ACK : Enquery / Acknowledge, 송신측이 Enquery 수신측이 Acknowledge, 1:1 전송 기법
-* * Polling : Select모드를 통하여 송신측이 전송할 수신측을 선택한다. 1:다 전송 기법
+* * Polling : Select모드를 통하여 송신측이 전송할 수신측을 선택한다. 1:多 전송 기법
 * 데이터 단위는 프레임
