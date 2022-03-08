@@ -55,30 +55,47 @@ OSI 7 Layers
 // Server측 
 package network;
 
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class DemoServer {
     public static void main(String[] args) throws IOException {
         int port = 5050;
+        int number = Integer.parseInt(args[0]);
+        String str = new String(args[1]);
         ServerSocket ssk = new ServerSocket(port); // ServerSocket 설정
 
         System.out.println("접속 대기중...");
+
 
         while(true){
             Socket socket = ssk.accept();
             System.out.println("사용자 접속 완료.");
             System.out.println("Client IP : " + socket.getInetAddress());
+
+            OutputStream ous = socket.getOutputStream();
+            DataOutputStream dous = new DataOutputStream(ous);
+
+            dous.writeUTF(str);
+            dous.writeInt(number);
+            dous.flush();
+            dous.close();
+            socket.close();
         }
     }
 }
+
 ```
 ```java
 // Client 측
 package network;
 
+import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.ConnectException;
 import java.net.Socket;
 
@@ -87,11 +104,23 @@ public class Client {
         try{
             Socket socket = new Socket("127.0.0.1", 5050);
             System.out.println("서버와 접속이 되었습니다.");
+
+            InputStream ins = socket.getInputStream();
+            DataInputStream dins = new DataInputStream(ins);
+            String str= dins.readUTF();
+            int number = dins.readInt(); // 정수형형태로 데이터를 읽어오기 위한 메소드
+            System.out.println("서버에서 전송된 값 : " + number  );
+            System.out.println("서버에서 전송된 문자 : " + str  );
+
+            dins.close();
+            ins.close();
+            socket.close();
         } catch(ConnectException e){
             System.out.println("연걸이 거절되었습니다.");
         }
     }
 }
+
 
 ```
 * 결과물</br>
