@@ -128,5 +128,12 @@ public class Client {
 
 전송 계층
 =======
-* 목적지에 신뢰성 있는 
-ㄷㅔ이터
+* 목적지에 신뢰성 있는 데이터 전송을 위한 계층이다. 오류 점검과 목적지의 애플리케이션을 식별하는 역할이다.
+* 신뢰/효율성 있는 데이터 전송을 보장한다.(1,2,3계층만 존재하여도 데이터 전송이 가능하다. 하지만, 신뢰성 있는 데이터 전송을 보장하지는 않는다)
+* * 연결형 통신(TCP) : 1) 데이터를 보내도 되나요? 2) 네, 보내도 됩니다. 3) 보냅니다! 4) 받았습니다 5) 확인했습니다.
+* * 비연결형 통신(UDP) : 데이터를 보냅니다. END...
+> TCP(Transmission Control Protocol) : 연결 지향형 프로토콜. 신뢰성있는 데이터를 제공한다. 전송 순서가 보장된다.
+> * 실시간 전송에 불리하다.(ex. Streaming Service)
+> > 3-Way-HandShaking(통신 시작) : Client가 SYN 패킷 전송 / 응답 대기 -> Server는 SYN+ACK 패킷을 Client로 응답 -> Client는 ACK패킷을 다시 보내 통신 시작.
+> > 4-Way-HandShaking(통신 종료) : Client가 FIN 패킷 전송 / 응답 대기 -> Server는 Time-Wait상태로 통신이 끝날 때까지 대기 -> 통신이 종료되면 Server가 Client에게 FIN 패킷 전송 -> Client는 확인 응답 전송
+> UDT(User Datagram Protocol) : 비연결 지향형 프로토콜. 신뢰성있는 데이터 전송에 부적합하다. 서로 다른 경로로 패킷을 전송한다(순서 보장 안됌).
