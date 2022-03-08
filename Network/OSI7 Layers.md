@@ -125,3 +125,8 @@ public class Client {
 ```
 * 결과물</br>
 <img width="1138" alt="스크린샷 2022-03-08 15 05 33" src="https://user-images.githubusercontent.com/70207093/157176832-0fc61b5e-f906-4925-9315-b4af311b81f4.png">
+
+전송 계층
+=======
+* 목적지에 신뢰성 있는 
+ㄷㅔ이터
