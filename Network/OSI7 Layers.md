@@ -138,3 +138,7 @@ public class Client {
 > > * 4-Way-HandShaking(통신 종료) : Client가 FIN 패킷 전송 / 응답 대기 -> Server는 Time-Wait상태로 통신이 끝날 때까지 대기 -> 통신이 종료되면 Server가 Client에게 FIN 패킷 전송 -> Client는 확인 응답 전송
 
 > UDT(User Datagram Protocol) : 비연결 지향형 프로토콜. 신뢰성있는 데이터 전송에 부적합하다. 서로 다른 경로로 패킷을 전송한다(순서 보장 안됌).
+
+TCP/IP 프로그래밍 참고 자료
+=========================
+http://cris.joongbu.ac.kr/course/20151/cn1/javanetwork/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%BCjava.net%ED%8C%A8%ED%82%A4%EC%A7%80.pdf
