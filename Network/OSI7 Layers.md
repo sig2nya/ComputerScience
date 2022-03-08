@@ -37,5 +37,15 @@ OSI 7 Layers
 * * 회선 제어 : ENQ/ACK 기법, Polling 기법
 * * ENQ/ACK : Enquery / Acknowledge, 송신측이 Enquery 수신측이 Acknowledge, 1:1 전송 기법
 * * Polling : Select모드를 통하여 송신측이 전송할 수신측을 선택한다. 1:多 전송 기법
-* 데이터 단위는 Frame, 대표 프로토콜은 Ethernet 사용</br>
+* 데이터 단위는 Frame, 대표 프로토콜은 Ethernet, Tocken Ring, FDDI 사용</br>
 ![image](https://user-images.githubusercontent.com/70207093/157163951-5ba1ea68-b512-465e-9541-cddd46f9f09c.png)
+
+네트워크 계층
+==========
+* 경로제어를 수행한다. 발신에서 착신까지의 패킷을 제어한다. 대표적으로, 라우팅이 있다.
+* 대표 프로토콜 : IP, IPsec, ICMP(Internet Control Message Protocol), IGMP(Internet Group Management Protocol) *정보처리기사에서 많이 나오는 문제였음.
+* * IP(Internet Protocol) : 인터넷을 이용하기 위한 프로토콜. 비신뢰성, 비연결성 프로토콜. 즉, 보낸 정보가 수신이 제대로 이루어졌는지 확인하지 않는다. 순서도 뒤죽박죽이 될 수 있다. 이 문제를 해결하기 위해서는 TCP를 이용한다.
+* * IPsec : IP에 Security를 추가한 기능. 자세한 내용은 따로 다루어보자.
+* * ICMP(Internet Control Message Protocol) : IP Packet을 처리할 때, 발생되는 문제를 알리기 위한 프로토콜이다. Ping 명령어 같은 경우에도 ICMP를 이용한 기능이라고 볼 수 있다. ICMP를 통해 DDoS 공격이 이루어질 수도 있다.
+* * IGMP(Internet Group Management Protocol) : Subnet간의 멀티캐스트를 위한 프로토콜로 사용된다. 주로 IPTV 외에서는 잘 사용되지 않는다.
+* 데이터 단위는 Packet
