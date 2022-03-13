@@ -26,3 +26,8 @@ PORT
 * 같은 IP내에서 포트를 구분.
 
 <img width="1011" alt="스크린샷 2022-03-13 17 44 50" src="https://user-images.githubusercontent.com/70207093/158051973-0741781a-775f-440a-824d-8a54bcc277c2.png">
+
+DNS
+===
+* IP는 기억하기 어렵다. 또한, 요청 IP가 바뀌는 경우도 있다.(접근이 힘들어진다)
+* Domain Name Service : Client가 DNS서버에 도메인 네임을 제공하면, DNS서버는 해당 도메인에 맞는 IP를 제공해준다. Client는 해당 IP를 통해 서비스에 접근 가능하다.
