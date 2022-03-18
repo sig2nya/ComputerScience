@@ -43,7 +43,7 @@ OSI 7 Layers
 네트워크 계층
 ==========
 * 경로제어를 수행한다. 발신에서 착신까지의 패킷을 제어한다. 대표적으로, 라우팅이 있다.
-* 대표 프로토콜 : IP, IPsec, ICMP(Internet Control Message Protocol), IGMP(Internet Group Management Protocol) *정보처리기사에서 많이 나오는 문제였음.
+* 대표 프로토콜 : IP, IPsec, ICMP(Internet Control Message Protocol), IGMP(Internet Group Management Protocol) </br>*정보처리기사에서 많이 나오는 문제였음.
 * * IP(Internet Protocol) : 인터넷을 이용하기 위한 프로토콜. 비신뢰성, 비연결성 프로토콜. 즉, 보낸 정보가 수신이 제대로 이루어졌는지 확인하지 않는다. 순서도 뒤죽박죽이 될 수 있다. 이 문제를 해결하기 위해서는 TCP를 이용한다.
 * * IPsec : IP에 Security를 추가한 기능. 자세한 내용은 따로 다루어보자.
 * * ICMP(Internet Control Message Protocol) : IP Packet을 처리할 때, 발생되는 문제를 알리기 위한 프로토콜이다. Ping 명령어 같은 경우에도 ICMP를 이용한 기능이라고 볼 수 있다. ICMP를 통해 DDoS 공격이 이루어질 수도 있다.
