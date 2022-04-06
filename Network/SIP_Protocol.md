@@ -41,3 +41,25 @@ Content-Length: 131</br>
          |------------------------------------------------->|
          |                                                  |
 ```
+
+Response Status Code
+====================
+```js
+      1xx: Provisional -- request received, continuing to process the
+           request;
+
+      2xx: Success -- the action was successfully received, understood,
+           and accepted;
+
+      3xx: Redirection -- further action needs to be taken in order to
+           complete the request;
+
+      4xx: Client Error -- the request contains bad syntax or cannot be
+           fulfilled at this server;
+
+      5xx: Server Error -- the server failed to fulfill an apparently
+           valid request;
+
+      6xx: Global Failure -- the request cannot be fulfilled at any
+           server.
+```
