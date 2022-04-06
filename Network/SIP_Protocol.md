@@ -1,0 +1,43 @@
+*SIP에 대한 표준 규격은 RFC3261 웹 문서 참조
+
+SIP(Session Initiation Protocol)
+================================
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP server10.biloxi.com;branch=z9hG4bKnashds8;received=192.0.2.3
+Via: SIP/2.0/UDP bigbox3.site3.atlanta.com;branch=z9hG4bK77ef4c2312983.1;received=192.0.2.2
+Via: SIP/2.0/UDP pc33.atlanta.com;branch=z9hG4bK776asdhds ;received=192.0.2.1
+To: Bob <sip:bob@biloxi.com>;tag=a6c85cf
+From: Alice <sip:alice@atlanta.com>;tag=1928301774
+Call-ID: a84b4c76e66710@pc33.atlanta.com
+CSeq: 314159 INVITE
+Contact: <sip:bob@192.0.2.4>
+Content-Type: application/sdp
+Content-Length: 131
+
+```js
+                     atlanta.com  . . . biloxi.com
+                 .      proxy              proxy     .
+               .                                       .
+       Alice's  . . . . . . . . . . . . . . . . . . . .  Bob's
+      softphone                                        SIP Phone
+         |                |                |                |
+         |    INVITE F1   |                |                |
+         |--------------->|    INVITE F2   |                |
+         |  100 Trying F3 |--------------->|    INVITE F4   |
+         |<---------------|  100 Trying F5 |--------------->|
+         |                |<-------------- | 180 Ringing F6 |
+         |                | 180 Ringing F7 |<---------------|
+         | 180 Ringing F8 |<---------------|     200 OK F9  |
+         |<---------------|    200 OK F10  |<---------------|
+         |    200 OK F11  |<---------------|                |
+         |<---------------|                |                |
+         |                       ACK F12                    |
+         |------------------------------------------------->|
+         |                   Media Session                  |
+         |<================================================>|
+         |                       BYE F13                    |
+         |<-------------------------------------------------|
+         |                     200 OK F14                   |
+         |------------------------------------------------->|
+         |                                                  |
+```
