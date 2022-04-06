@@ -63,3 +63,22 @@ Response Status Code
       6xx: Global Failure -- the request cannot be fulfilled at any
            server.
 ```
+
+SIP의 구성 요소
+===============
+1. UA(User Agent) : UAC와 UAS를 동시에 포함하는 논리적 구조
+2. UAC(User Agent Client) : Request 메시지를 생성하여 전송하는 논리적 구성 요소
+3. UAS(User Agent Server) : Request를 처리하고, Response 메시지를 반환하는 논리적 구성 요소
+4. End-Device
+* * SIP Phone
+* * PC/Laptop with SIP Client
+* * PDA
+* * Mobile Phone
+
+User Agent
+==========
+* B2BUA(Back-To-Back User Agent)
+* * Request 메시지를 수신하고, 이를 처리하기 위해 UAS로 동작
+* * Response 메시지를 생성하기위해 UAC로 동작하여 새로운 Request 메시지를 외부로 전송
+* * Proxy Server의 동작 형태 중 하나
+* * 모든 Call 처리 상태 정보를 유지 관리
