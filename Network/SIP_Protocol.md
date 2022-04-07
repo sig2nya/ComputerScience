@@ -68,6 +68,14 @@ Response Status Code
            server.
 ```
 
+SIP Components
+==============
+1. User Location : Decide Terminal of joining to communication
+2. User Availiability : Decide whether receiver join to communication or not
+3. User Capabilities : Decide media and params in communication
+4. Session Setup : Decide session params in receiver and caller
+5. Session Management : Finish session, Transform session, Change session params, Link etc services
+
 SIP의 구성 요소
 ===============
 1. UA(User Agent) : UAC와 UAS를 동시에 포함하는 논리적 구조
