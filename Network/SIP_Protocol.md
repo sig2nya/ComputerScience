@@ -2,6 +2,10 @@
 
 SIP(Session Initiation Protocol)
 ================================
+* 정의 : Session Initiation Protocol
+* VoIP 또는 멀티미디어 통신용 신호 프로토콜. 하나 이상의 양방향 멀티미디어 세션/Call을 설정, 변경, 해제를 할 수 있음
+* * 세션 : 
+
 SIP/2.0 200 OK</br>
 Via: SIP/2.0/UDP server10.biloxi.com;branch=z9hG4bKnashds8;received=192.0.2.3</br>
 Via: SIP/2.0/UDP bigbox3.site3.atlanta.com;branch=z9hG4bK77ef4c2312983.1;received=192.0.2.2</br>
