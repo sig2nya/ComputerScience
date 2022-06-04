@@ -17,20 +17,20 @@ Master Replication Configuration
 
 Masyer MySQL Configuration
 ===========================
-vi /etc/my.cnf
-[mysqld]
-log-bin=mysql-bin
-server-id=1
+vi /etc/my.cnf</br>
+[mysqld]</br>
+log-bin=mysql-bin</br>
+server-id=1</br>
 
 Master Server 정보 확인
 =====================
-* mysql > show master status;
-+------------------+----------+--------------+------------------+
-| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB |
-+------------------+----------+--------------+------------------+
-| mysql-bin.000010 |     1487 |              |                  | 
-+------------------+----------+--------------+------------------+
-1 row in set (0.00 sec)
+* mysql > show master status;</br>
++------------------+----------+--------------+------------------+</br>
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB |</br>
++------------------+----------+--------------+------------------+</br>
+| mysql-bin.000010 |     1487 |              |                  | </br>
++------------------+----------+--------------+------------------+</br>
+1 row in set (0.00 sec)</br>
 
 Slave Recplication Configuration
 ================================
@@ -41,29 +41,29 @@ Slave Recplication Configuration
 
 Slave MySQL Configuration
 =========================
-vi /etc/my.cnf
-[mysqld]
-server-id=2
-replicate-do-db='repl_db'
+vi /etc/my.cnf</br>
+[mysqld]</br>
+server-id=2</br>
+replicate-do-db='repl_db'</br>
 
 Master Server 연결
 =================
-mysql> change master to
-master_host='192.168.65.148',
-master_user='repl_user',
-master_password='password',
-master_log_file='mysql-bin.000010',
-master_log_pos=1487;
+mysql> change master to</br>
+master_host='192.168.65.148',</br>
+master_user='repl_user',</br>
+master_password='password',</br>
+master_log_file='mysql-bin.000010',</br>
+master_log_pos=1487;</br>
 
 my.cnf Configuration
 ====================
-[mysqld]
-replicate-do-db='repl_db'
-master-host='ip'
-master-user=repl_user
-master-password=password
-master-port=3306
-server-id=2
+[mysqld]</br>
+replicate-do-db='repl_db'</br>
+master-host='ip'</br>
+master-user=repl_user</br>
+master-password=password</br>
+master-port=3306</br>
+server-id=2</br>
 
 Master Server Status 확인
 ========================
@@ -91,7 +91,7 @@ Command: Query</br>
 
 Slave Server Status 확인
 =======================
-mysql> show processlist\G;
+mysql> show processlist\G;</br>
 
 *************************** 1. row ***************************</br>
      Id: 1</br>
