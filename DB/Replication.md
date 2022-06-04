@@ -67,47 +67,47 @@ server-id=2
 
 Master Server Status 확인
 ========================
-mysql> show processlist\G
+mysql> show processlist\G</br>
 
-*************************** 1. row ***************************
-     Id: 1
-   User: repl_user
-   Host: 192.168.65.149:38488
-     db: NULL
-Command: Binlog Dump
-   Time: 2434
-  State: Has sent all binlog to slave; waiting for binlog to be updated
-   Info: NULL
-*************************** 2. row ***************************
-     Id: 2
-   User: root
-   Host: localhost
-     db: NULL
-Command: Query
-   Time: 0
-  State: NULL
-   Info: show processlist
-2 rows in set (0.00 sec)
+*************************** 1. row ***************************</br>
+     Id: 1</br>
+   User: repl_user</br>
+   Host: 192.168.65.149:38488</br>
+     db: NULL</br>
+Command: Binlog Dump</br>
+   Time: 2434</br>
+  State: Has sent all binlog to slave; waiting for binlog to be updated</br>
+   Info: NULL</br>
+*************************** 2. row ***************************</br>
+     Id: 2</br>
+   User: root</br>
+   Host: localhost</br>
+     db: NULL</br>
+Command: Query</br>
+   Time: 0</br>
+  State: NULL</br>
+   Info: show processlist</br>
+2 rows in set (0.00 sec)</br>
 
 Slave Server Status 확인
 =======================
 mysql> show processlist\G;
 
-*************************** 1. row ***************************
-     Id: 1
-   User: system user
-   Host: 
-     db: NULL
-Command: Connect
-   Time: 4294967261
-  State: Has read all relay log; waiting for the slave I/O thread to update it
-   Info: NULL
-*************************** 2. row ***************************
-     Id: 2
-   User: system user
-   Host: 
-     db: NULL
-Command: Connect
-   Time: 90
-  State: Waiting for master to send event
-   Info: NULL
+*************************** 1. row ***************************</br>
+     Id: 1</br>
+   User: system user</br>
+   Host: </br>
+     db: NULL</br>
+Command: Connect</br>
+   Time: 4294967261</br>
+  State: Has read all relay log; waiting for the slave I/O thread to update it</br>
+   Info: NULL</br>
+*************************** 2. row ***************************</br>
+     Id: 2</br>
+   User: system user</br>
+   Host: </br>
+     db: NULL</br>
+Command: Connect</br>
+   Time: 90</br>
+  State: Waiting for master to send event</br>
+   Info: NULL</br>
