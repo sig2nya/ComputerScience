@@ -114,7 +114,7 @@ Command: Connect</br>
 
 vi /etc/my.cnf 관련 Issue
 =========================
-* 많은 블로그에서 MySQL Replication을 수행하려면, 서버에서 '[root@localhost .] # vi /etc/my.cnf를 통하여
+* 많은 블로그에서 MySQL Replication을 수행하려면, 서버에서 '[root@localhost .] # vi /etc/my.cnf를 통하여</br>
 [mysqld]</br>
 server-id = 1</br>
 log-bin=mysql-bin</br>
