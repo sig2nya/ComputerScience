@@ -114,5 +114,5 @@ Command: Connect</br>
 
 vi /etc/my.cnf 관련 Issue
 =========================
-* 많은 블로그에서 MySQL Replication을 수행하려면, 서버에서 '[root@localhost .] # vi /etc/my.cnf를 수정해야 한다고 말한다
-* 하지만, 해당 파일을 수정하면 systemctl start mysql fail error를 띄우며 실행 자체가 안된다.
+* 많은 블로그에서 MySQL Replication을 수행하려면, 서버에서 '[root@localhost .] # vi /etc/my.cnf를 통하여 my.cnf 파일을 수정해야 한다고 말한다
+* 하지만, 해당 파일을 수정하면 systemctl start mysql fail error를 띄우며 실행 자체가 안된다. 뭐가 문제일까?
