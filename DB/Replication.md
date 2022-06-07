@@ -49,74 +49,49 @@ replicate-do-db='repl_db'</br>
 Master Server 연결
 =================
 mysql> change master to</br>
-master_host='192.168.65.148',</br>
+master_host='192.168.65.148',(Master Server IP)</br>
 master_user='repl_user',</br>
 master_password='password',</br>
 master_log_file='mysql-bin.000010',</br>
 master_log_pos=1487;</br>
 
-my.cnf Configuration
-====================
-[mysqld]</br>
-replicate-do-db='repl_db'</br>
-master-host='ip'</br>
-master-user=repl_user</br>
-master-password=password</br>
-master-port=3306</br>
-server-id=2</br>
+Slave Status 확인
+================
+mysql> show slave status\G;
+*************************** 1. row ***************************
+             Slave_IO_State: Waiting for master to send event
+                Master_Host: 192.168.65.148
+                Master_User: repl_user
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: mysql-bin.000012
+        Read_Master_Log_Pos: 434
+             Relay_Log_File: slave-relay-bin.000042
+              Relay_Log_Pos: 419
+      Relay_Master_Log_File: mysql-bin.000012
+           <h>Slave_IO_Running: Yes</h>
+          <h>Slave_SQL_Running: Yes</h>
+            Replicate_Do_DB: repl_db,repl_db
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 434
+            Relay_Log_Space: 419
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: 0
+1 row in set (0.00 sec)
 
-Master Server Status 확인
-========================
-mysql> show processlist\G</br>
-
-*************************** 1. row ***************************</br>
-     Id: 1</br>
-   User: repl_user</br>
-   Host: 192.168.65.149:38488</br>
-     db: NULL</br>
-Command: Binlog Dump</br>
-   Time: 2434</br>
-  State: Has sent all binlog to slave; waiting for binlog to be updated</br>
-   Info: NULL</br>
-*************************** 2. row ***************************</br>
-     Id: 2</br>
-   User: root</br>
-   Host: localhost</br>
-     db: NULL</br>
-Command: Query</br>
-   Time: 0</br>
-  State: NULL</br>
-   Info: show processlist</br>
-2 rows in set (0.00 sec)</br>
-
-Slave Server Status 확인
-=======================
-mysql> show processlist\G;</br>
-
-*************************** 1. row ***************************</br>
-     Id: 1</br>
-   User: system user</br>
-   Host: </br>
-     db: NULL</br>
-Command: Connect</br>
-   Time: 4294967261</br>
-  State: Has read all relay log; waiting for the slave I/O thread to update it</br>
-   Info: NULL</br>
-*************************** 2. row ***************************</br>
-     Id: 2</br>
-   User: system user</br>
-   Host: </br>
-     db: NULL</br>
-Command: Connect</br>
-   Time: 90</br>
-  State: Waiting for master to send event</br>
-   Info: NULL</br>
-
-vi /etc/my.cnf 관련 Issue
-=========================
-* 많은 블로그에서 MySQL Replication을 수행하려면, 서버에서 '[root@localhost .] # vi /etc/my.cnf를 통하여</br>
-[mysqld]</br>
-server-id = 1</br>
-log-bin=mysql-bin</br>
-과 같이 my.cnf 파일을 수정해야 한다고 말한다
-* 하지만, 해당 파일을 수정하면 systemctl start mysql fail error를 띄우며 실행 자체가 안된다. 뭐가 문제일까?
+*Slave_IO_Running / Slave_SQL_Running이 정상적으로 YES가 출력되면 Replication 성공
