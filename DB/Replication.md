@@ -57,41 +57,41 @@ master_log_pos=1487;</br>
 
 Slave Status 확인
 ================
-mysql> show slave status\G;
-*************************** 1. row ***************************
-             Slave_IO_State: Waiting for master to send event
-                Master_Host: 192.168.65.148
-                Master_User: repl_user
-                Master_Port: 3306
-              Connect_Retry: 60
-            Master_Log_File: mysql-bin.000012
-        Read_Master_Log_Pos: 434
-             Relay_Log_File: slave-relay-bin.000042
-              Relay_Log_Pos: 419
-      Relay_Master_Log_File: mysql-bin.000012
-           <h>Slave_IO_Running: Yes</h>
-          <h>Slave_SQL_Running: Yes</h>
-            Replicate_Do_DB: repl_db,repl_db
-        Replicate_Ignore_DB: 
-         Replicate_Do_Table: 
-     Replicate_Ignore_Table: 
-    Replicate_Wild_Do_Table: 
-Replicate_Wild_Ignore_Table: 
-                 Last_Errno: 0
-                 Last_Error: 
-               Skip_Counter: 0
-        Exec_Master_Log_Pos: 434
-            Relay_Log_Space: 419
-            Until_Condition: None
-             Until_Log_File: 
-              Until_Log_Pos: 0
-         Master_SSL_Allowed: No
-         Master_SSL_CA_File: 
-         Master_SSL_CA_Path: 
-            Master_SSL_Cert: 
-          Master_SSL_Cipher: 
-             Master_SSL_Key: 
-      Seconds_Behind_Master: 0
-1 row in set (0.00 sec)
+mysql> show slave status\G;</br>
+*************************** 1. row ***************************</br>
+             Slave_IO_State: Waiting for master to send event</br>
+                Master_Host: 192.168.65.148</br>
+                Master_User: repl_user</br>
+                Master_Port: 3306</br>
+              Connect_Retry: 60</br>
+            Master_Log_File: mysql-bin.000012</br>
+        Read_Master_Log_Pos: 434</br>
+             Relay_Log_File: slave-relay-bin.000042</br>
+              Relay_Log_Pos: 419</br>
+      Relay_Master_Log_File: mysql-bin.000012</br>
+           <h>Slave_IO_Running: Yes</h></br>
+          <h>Slave_SQL_Running: Yes</h></br>
+            Replicate_Do_DB: repl_db,repl_db</br>
+        Replicate_Ignore_DB: </br>
+         Replicate_Do_Table: </br>
+     Replicate_Ignore_Table: </br>
+    Replicate_Wild_Do_Table: </br>
+Replicate_Wild_Ignore_Table: </br>
+                 Last_Errno: 0</br>
+                 Last_Error: </br>
+               Skip_Counter: 0</br>
+        Exec_Master_Log_Pos: 434</br>
+            Relay_Log_Space: 419</br>
+            Until_Condition: None</br>
+             Until_Log_File: </br>
+              Until_Log_Pos: 0</br>
+         Master_SSL_Allowed: No</br>
+         Master_SSL_CA_File: </br>
+         Master_SSL_CA_Path: </br>
+            Master_SSL_Cert: </br>
+          Master_SSL_Cipher: </br>
+             Master_SSL_Key: </br>
+      Seconds_Behind_Master: 0</br>
+1 row in set (0.00 sec)</br>
 
 *Slave_IO_Running / Slave_SQL_Running이 정상적으로 YES가 출력되면 Replication 성공
