@@ -11,7 +11,7 @@ FailOver(장애 극복)
 ```java
 // Shell Script
 #!/bin/sh
-VIP='192.168.0.0'
+VIP='192.168.0.0'(
 DEV='enp0s3'
 
 healthCheck(){
