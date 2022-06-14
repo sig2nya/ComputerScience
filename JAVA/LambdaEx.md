@@ -15,8 +15,8 @@ public String hello(){
  */
  
 () -> {}
-() -> 1
-() -> { return 1; }
+() -> 1 // Body가 한 줄일 경우, {} 생략 가능.
+() -> { return 1; } // return문의 경우 {} 생략 불가.
  
 (int x) -> x + 1;
 (x) -> x + 1;
