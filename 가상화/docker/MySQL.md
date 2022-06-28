@@ -5,3 +5,6 @@ Docker로 MySQL 실행
 
 * 2) 새로운 Terminal 창 -> docker ps
 * <img width="716" alt="image" src="https://user-images.githubusercontent.com/70207093/176130856-2cce1df2-d1c7-4aff-baf5-0480c3985c81.png">
+
+* 3) Container exec
+* <img width="722" alt="image" src="https://user-images.githubusercontent.com/70207093/176131272-8d2e680e-7f02-4072-88a5-6b1862ada89a.png">
