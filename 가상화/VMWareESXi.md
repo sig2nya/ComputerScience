@@ -10,7 +10,7 @@ ESXi UI
 <img width="481" alt="image" src="https://user-images.githubusercontent.com/70207093/176097231-ca40e5e1-6a2e-4644-a710-a3d3f9f5eabe.png">
 
 * ESXi를 통하여 .ova 파일과 같은 솔루션들을 Deployment 진행 가능
-* ESXi를 통하여 Virtual Machine 관리를 용이하게 가능
+* ESXi를 통하여 Virtual Machine 관리를 용이하게 가능(Solution Deployment에 유용하게 쓰였다. 배포 이후에는 Putty와 같은 SSH를 이용하여 해당 솔루션을 관리하였다. *웬만하면 배포 이후에는 ESXi를 통해 작업하는 걸 추천 못하겟다.)
 
 Docker / ESXi
 =============
