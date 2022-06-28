@@ -1,3 +1,5 @@
+* 참조 : https://velog.io/@honghwahyeong/Docker-Docker-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC
+
 Docker로 MySQL 실행
 ===================
 * 1) docker run -it --name mysql -e MYSQL_ROOT_PASSWORD=Avaya123$ -e MYSQL_DATABASE=dockerdb mysql 명령어 수행
