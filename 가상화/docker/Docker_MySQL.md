@@ -3,7 +3,7 @@
 Docker로 MySQL 실행
 ===================
 * 1) docker run -it --name mysql -e MYSQL_ROOT_PASSWORD='비밀번호' -e MYSQL_DATABASE=dockerdb mysql 명령어 수행
-     <img width="626" alt="image" src="https://user-images.githubusercontent.com/70207093/176130654-3e7b95b8-dc3a-4d7d-8045-9affe3551331.png">
+     <img width="473" alt="image" src="https://user-images.githubusercontent.com/70207093/176134693-8fa13880-5ab0-4dce-877c-84094d3b3e0f.png">
 
 * 2) 새로운 Terminal 창 -> docker ps</br>
      <img width="716" alt="image" src="https://user-images.githubusercontent.com/70207093/176130856-2cce1df2-d1c7-4aff-baf5-0480c3985c81.png">
