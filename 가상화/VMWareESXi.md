@@ -16,7 +16,7 @@ Docker / ESXi
 =============
 * Docker와 Virtual Machine의 차이
 * 1) Virtual Box를 생각해보자. Virtual Box라는 Hypervisor 위에 이미지를 생성한다. 해당 머신 위에 사용하고자하는 OS(Guest OS)를 설치해야한다. 하지만, 도커는 그럴 필요 없다.
-* 2) 더 나아가, Hypervisor 기반의 VM은 Hypervisor 위에 새로운 VM이 생성될 때마다 그에 맞는 OS를 설치해야한다. 이는 비효율적이다. 다음은 도커의 특징이다(출처 : 나무위키)
+* 2) 더 나아가, Hypervisor 기반의 VM은 Hypervisor 위에 새로운 VM이 생성될 때마다 그에 맞는 OS를 설치해야한다. 이는 비효율적이다. 다음은 도커의 특징이다(출처 : <a href="https://namu.wiki/w/Docker">나무위키</a>)
 <img width="730" alt="image" src="https://user-images.githubusercontent.com/70207093/176098091-a9713911-6e12-4fd5-86d2-543e465f7168.png">
 
 * 첫 번째 특징에서도 잘 나와있다. 운영체제를 가상화 하지 않는다고 되어있다. 가상머신에 비해 매우 가벼울 것이다.
