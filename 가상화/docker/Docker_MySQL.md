@@ -246,3 +246,7 @@ Docker MySQL NetWork Configuration
 ```
 
 * 참으로 역겨운 JSON이다. 이제 해당 컨테이너를 macvlan에 연결해보자.
+
+* 2) docker attach mysql
+     <img width="626" alt="image" src="https://user-images.githubusercontent.com/70207093/176134028-fd0fb814-b256-49f0-8ddb-2de3fa8f5cf0.png">
+
