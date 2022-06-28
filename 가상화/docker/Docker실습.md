@@ -1,6 +1,6 @@
 Docker 설치
 ===========
-* 실행 환경 : Ubuntu 20.04 on Windows
+* 실행 환경 : Ubuntu 20.04 on Windows / Window 11
 * 1) cmd에서 Ubuntu 20.04 설치 수행(설치가 안된다면 cmd를 관리자 권한으로 수행) -> wsl --install -d Ubuntu-20.04 명령어 실행
 * <img width="694" alt="image" src="https://user-images.githubusercontent.com/70207093/176104009-d8a56bed-1421-4ebb-a498-b37cf69bfc57.png">
 
