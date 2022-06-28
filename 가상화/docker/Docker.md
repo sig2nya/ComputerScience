@@ -13,6 +13,6 @@ Docker 설치
 * 4) docker.io Installation
 * <img width="626" alt="image" src="https://user-images.githubusercontent.com/70207093/176105963-b758e950-3775-4cfe-adea-82507636bad7.png">
 
-* 5) docker.io가 설치가 되었다면, sudo dockerd를 통하여 실행시키자(우측 화면). Docker Deamon을 실행시키는 명령어이다.
-* 6) Ubuntu terminal을 하나 더 띄워, sudo docker hello-world 명령어를 수행한 뒤에, 'Hello from Docker!'가 나오면 Docker 설치가 끝.(좌측 화면)
+* 5) docker.io가 설치가 되었다면, sudo dockerd를 통하여 실행시키자(좌측 화면). Docker Deamon을 실행시키는 명령어이다.
+* 6) Ubuntu terminal을 하나 더 띄워, sudo docker hello-world 명령어를 수행한 뒤에, 'Hello from Docker!'가 나오면 Docker 설치가 끝.(우측 화면)
 * <img width="1266" alt="image" src="https://user-images.githubusercontent.com/70207093/176106884-4019a6a0-dd71-4668-9c08-a9514dd180fc.png">
