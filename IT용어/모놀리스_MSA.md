@@ -1,4 +1,5 @@
 * 출처 : https://www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/
+* 우아한 형제들(배달의 민족)은 어떻게 MSA를 적용하였는가? : https://www.youtube.com/watch?v=BnS6343GTkY
 
 Monolithic
 ==========
