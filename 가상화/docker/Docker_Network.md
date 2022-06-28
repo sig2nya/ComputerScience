@@ -52,4 +52,4 @@ Docker 네트워크 종류
 * * 하나는 컨테이너 내부 Namespace에 할당되는eth0 이름의 인터페이스이고, 나머지 하나는 호스트 네트워크 브리지 docker0에 바인딩 되는 vethXXXXXXX이름 형식의 veth 인터페이스다. 
 * * (“veth”는 “virtual eth”라는 의미)
 
-![image](https://user-images.githubusercontent.com/70207093/176114380-7954a1ba-ae44-4ad0-bcb1-a75da5dc7664.png)
+    ![image](https://user-images.githubusercontent.com/70207093/176114380-7954a1ba-ae44-4ad0-bcb1-a75da5dc7664.png)
