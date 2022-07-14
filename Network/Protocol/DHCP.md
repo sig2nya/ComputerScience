@@ -21,3 +21,8 @@ Lease(임대)
 4. 호스트가 *Offer Packet*을 수신한 후, *Request Packet*을 BroadCasting (DHCP Server가 여러개일 수 있기 때문)
 5. DHCP Server는 DHCP ACK를 수행 / 즉, DHCP 풀에서 IP 주소를 호스트에게 임대
 ```
+
+Linux Net_Conf
+==============
+* > vi /etc/sysconfig/network-scripts/ifcfg-enp*** 수행 및 bootproto=dhcp 설정
+<img width="399" alt="image" src="https://user-images.githubusercontent.com/70207093/178936669-704f9f21-166e-485d-b4eb-04d2b44c2408.png">
