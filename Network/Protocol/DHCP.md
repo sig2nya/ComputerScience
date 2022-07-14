@@ -24,5 +24,6 @@ Lease(임대)
 
 Linux Net_Conf
 ==============
-* > vi /etc/sysconfig/network-scripts/ifcfg-enp*** 수행 및 bootproto=dhcp 설정
-<img width="399" alt="image" src="https://user-images.githubusercontent.com/70207093/178936669-704f9f21-166e-485d-b4eb-04d2b44c2408.png">
+> vi /etc/sysconfig/network-scripts/ifcfg-enp*** 수행 및 bootproto=dhcp 설정
+> (해당 방법을 통해 네트워크 상에서 비어있는 ip를 동적으로 할당받을 수 있다. 또한, static 설정으로 통해 할당받은 ip를 정적으로 고정 가능)
+  <img width="399" alt="image" src="https://user-images.githubusercontent.com/70207093/178936669-704f9f21-166e-485d-b4eb-04d2b44c2408.png">
