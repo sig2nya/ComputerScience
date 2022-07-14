@@ -2,7 +2,7 @@
 
 Virtual Box Network Configuration
 =================================
-* 개요 : Virtual Box로 가상화를 구성하는데 Host를 통한 네트워크 접근, VM 자체로부터 네트워크 접근 등 좀 더 세부적으로 네트워크 설정 방법을 공부하고자 작성.(공부할게 왜이리 많은지...)
+* 개요 : Virtual Box로 가상화를 구성하는데 Host를 통한 네트워크 접근, VM 자체로부터 네트워크 접근 등 좀 더 세부적으로 네트워크 설정 방법을 공부하고자 작성.(VM 구축 중에 yum이 안먹는다. 확인해보니 네트워크 연결 자체가 안되서 해당 부분에 대한 이해가 필요하다 느낌)
 * 다음과 같이 Virtual Box의 네트워크 환경 설정을 보자</br>
   <img width="501" alt="image" src="https://user-images.githubusercontent.com/70207093/178914931-d51d75ed-2bf1-4f50-9cfa-0ab107701805.png">
 * 해당 설정을 통해 Host는 각 VM에 가상 네트워크를 제공 가능하다.
