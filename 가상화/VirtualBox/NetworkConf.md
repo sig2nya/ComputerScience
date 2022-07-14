@@ -19,7 +19,8 @@ Virtual Machine Network Configuration
 * * WIFI 공유기 또한 NAT 방식으로 내부 네트워크에 IP를 할당한다. VirtualBox의 NAT 방식도 마찬가지이며, Host PC가 공유기 역할을 하여 VM들에게 IP를 할당해준다.
 * * 이는, Host IP가 공인 IP가 되어 외부에서의 접근이 어려워진다. 즉, VM -> Host로 단방향 통신이 된다.(양방향 또한 물론 가능하다. 추가적인 설정을 통해서 포트포워딩을 수행해주어야 한다.)
 * * Host 아래 Guest끼리의 통신이 불가능
-* * 외부와 통신할 때, VM은 Host의 IP를 달고 통신한다. 
+* * 외부와 통신할 때, VM은 Host의 IP를 달고 통신한다.
+* * 위의 특징들에 기반하여 NAT 방식은 VM을 Client로써 사용할 때 적합하다. 즉, NAT 방식은 Server로 사용하기 매우 부적합한 네트워크 방식.
 
 * NAT Network 방식
 * * NAT 방식과 비슷하다. 차이점은 Guest끼리의 내부적인 통신이 가능하다.
