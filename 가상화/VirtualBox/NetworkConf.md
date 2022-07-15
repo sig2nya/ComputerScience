@@ -1,4 +1,4 @@
-* 참고 : https://technote.kr/213
+* 참고 : https://technote.kr/213 / https://www.virtualbox.org/manual/ch06.html
 
 Virtual Box Network Configuration
 =================================
@@ -28,4 +28,6 @@ Virtual Machine Network Configuration
 * 브리지에 어댑터
 * * Host PC와 동등한 수준의 네트워크 구성
 * * 각 VM에 추가적인 IP 할당이 가능
+
+    <img width="492" alt="image" src="https://user-images.githubusercontent.com/70207093/179152043-25befa67-b46b-424c-85c1-b7d5befbb20e.png">
 
